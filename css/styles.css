@@ -1,0 +1,204 @@
+/*!
+ *
+ *
+ *
+ */
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  font-family: 'ff-meta-serif-web-pro',  serif;
+  /*background-color: #352c2f;*/
+}
+hr {
+  border-color: #5d151c;
+  border-width: 3px;
+  max-width: 50px;
+}
+hr.light {
+  border-color: white;
+}
+a {
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+  color: #5d151c;
+}
+a:hover,
+a:focus {
+  color: white;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'ff-meta-web-pro', 'Helvetica Neue', Arial, sans-serif;
+}
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+/* title on home page */
+#title {
+  font-family: ff-meta-web-pro, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.sans-serif {
+  font-family: ff-meta-web-pro, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.text-faded {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar {
+  background-color: #2c1d18;
+}
+
+nav a {
+
+  color: #adacb4;
+}
+
+header  {
+  position: fixed;
+  width: 100%;
+  min-height: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center top;
+  background-image: url('../images/header.jpg');
+  /*
+Header image by Photo by Annie Spratt on Unsplash
+  */
+  text-align: center;
+  color: white;
+}
+header .header-content {
+  position: relative;
+  text-align: center;
+  padding: 100px 15px 100px;
+  width: 100%;
+}
+header .header-content .header-content-inner h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 30px;
+}
+header .header-content .header-content-inner hr {
+  margin: 30px auto;
+}
+header .header-content .header-content-inner p {
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+
+
+.text-primary {
+  color: #5d151c;
+}
+.no-gutter > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.headline-text {
+    font-size: 3rem;
+    font-family: ff-meta-web-pro, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  margin-top: 2rem;
+}
+
+#monday-circle {
+   width: 100px;
+   height: 100px;
+   background: #4c4032;
+   border-radius: 50%;
+   line-height: 100px;
+   text-align: center;
+   color: white;
+ }
+
+ #wednesday-circle {
+    width: 100px;
+    height: 100px;
+    background: #abc2c8;
+    border-radius: 50%;
+    line-height: 100px;
+    text-align: center;
+    color: white;
+  }
+
+
+   #friday-circle {
+      width: 100px;
+      height: 100px;
+      background: #878579;
+      border-radius: 50%;
+      line-height: 100px;
+      text-align: center;
+      color: white;
+    }
+
+@media (min-width: 768px) {
+  header {
+    min-height: 100%;
+  }
+  header .header-content {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 0 50px;
+  }
+  header .header-content .header-content-inner {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header .header-content .header-content-inner h1 {
+    font-size: 50px;
+  }
+  header .header-content .header-content-inner p {
+    font-size: 18px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+
+@media only screen and (max-width: 736px) {
+
+  header {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url('../images/header.jpg');
+  }
+  .navbar-brand {
+    font-size: 1rem;
+  }
+}
